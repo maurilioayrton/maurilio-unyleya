@@ -2,7 +2,7 @@ pipeline {
     environment {
       registry = "osanamgcj/mobead_image_build"
       registryCredential = 'dockerhub'
-      dockerImage = ''
+      dockerImage = "${image}"
     }
     agent any 
     stages { 
